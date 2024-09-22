@@ -10,7 +10,7 @@ from a_star import *
 
 
 
-MODE = 'picamera'
+MODE = 'legacy'
 
 if MODE=='legacy':
     import picar_4wd as fc
@@ -26,7 +26,7 @@ elif MODE=='picamera':
     from picarx import Picarx
     fc = Picarx()
     import picamera_utils
-    LABEL_PATH='../picarx/labelmap.txt'
+    LABEL_PATH='labelmap.txt'
 
     MAX_ANGLE = 90
     MIN_ANGLE = -90
